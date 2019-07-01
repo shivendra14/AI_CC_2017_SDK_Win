@@ -1,0 +1,72 @@
+editWidth = max_char_width() * 7;
+dialog(child_vertical: align_top, name: '$$$/MarkedObjects/MarkedObjectsPreferencesDialog/DialogTitle=MarkedObjects Preferences', placement: place_row, spacing: gLargeSpace)
+{
+	group(child_horizontal: align_fill, placement: place_column, spacing: gGap)
+	{
+		cluster(child_horizontal: align_right, name: '$$$/MarkedObjects/MarkedObjectsPreferencesDialog/SubscriptCluster=Subscript', placement: place_column, spacing: gSpace)
+		{
+			group(child_vertical: align_center, placement: place_row, spacing: gGap)
+			{
+				static_text(name: '$$$/MarkedObjects/MarkedObjectsPreferencesDialog/SubFontSize=Font Size:');
+				edit_text(item_id: 9, width: editWidth);
+			}
+			group(child_vertical: align_center, placement: place_row, spacing: gGap)
+			{
+				static_text(name: '$$$/MarkedObjects/MarkedObjectsPreferencesDialog/SubFontName=Font Name:');
+				edit_text_popup(item_id: 11, width: editWidth);
+			}
+			group(child_vertical: align_center, placement: place_row, spacing: gGap)
+			{
+				static_text(name: '$$$/MarkedObjects/MarkedObjectsPreferencesDialog/SubX=X:');
+				edit_text(item_id: 13, width: editWidth);
+			}
+			group(child_vertical: align_center, placement: place_row, spacing: gGap)
+			{
+				static_text(name: '$$$/MarkedObjects/MarkedObjectsPreferencesDialog/SubY=Y:');
+				edit_text(item_id: 15, width: editWidth);
+			}
+		}
+		cluster(child_horizontal: align_right, name: '$$$/MarkedObjects/MarkedObjectsPreferencesDialog/DefaultTextCluster=Default Text', placement: place_column, spacing: gSpace)
+		{
+			group(child_vertical: align_center, placement: place_row, spacing: gGap)
+			{
+				static_text(name: '$$$/MarkedObjects/MarkedObjectsPreferencesDialog/DefFontSize=Font Size:');
+				edit_text(item_id: 19, width: editWidth);
+			}
+			group(child_vertical: align_center, placement: place_row, spacing: gGap)
+			{
+				static_text(name: '$$$/MarkedObjects/MarkedObjectsPreferencesDialog/DefFontName=Font Name:');
+				edit_text_popup(item_id: 21, width: editWidth);
+			}
+			group(child_vertical: align_center, placement: place_row, spacing: gGap)
+			{
+				static_text(name: '$$$/MarkedObjects/MarkedObjectsPreferencesDialog/DefX=X:');
+				edit_text(item_id: 23, width: editWidth);
+			}
+			group(child_vertical: align_center, placement: place_row, spacing: gGap)
+			{
+				static_text(name: '$$$/MarkedObjects/MarkedObjectsPreferencesDialog/DefY=Y:');
+				edit_text(item_id: 25, width: editWidth);
+			}
+			group(child_vertical: align_center, placement: place_row, spacing: gGap)
+			{
+				static_text(name: '$$$/MarkedObjects/MarkedObjectsPreferencesDialog/DefaultText=Default Text:');
+				edit_text(item_id: 27, width: editWidth);
+			}
+		}
+	}
+	group(child_horizontal: align_fill, margin_top: gPopupClusterLargeTextOverhang, placement: place_column, spacing: gLargeSpace)
+	{
+		group(child_horizontal: align_fill, placement: place_column, spacing: gGap)
+		{
+			button(item_id: 1, name: '$$$/gOK=OK');
+			button(item_id: 2, name: '$$$/gCancel=Cancel');
+		}
+		group(child_horizontal: align_left, placement: place_column, spacing: gGap)
+		{
+			static_text(name: '$$$/MarkedObjects/MarkedObjectsPreferencesDialog/PointPrecision=Point Precision:');
+			edit_text(item_id: 4, width: editWidth);
+		}
+		check_box(horizontal: align_center, item_id: 5, name: '$$$/gPreview=&Auto Sort');
+	}
+}

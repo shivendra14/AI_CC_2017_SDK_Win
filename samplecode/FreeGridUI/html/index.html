@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html 
+  xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+	<script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/CSInterface.js"></script>
+    <script src="../js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/freegrid.css">
+  </head>
+  <body>
+
+	<form role="form" id="settingsForm">
+		<div class="row">
+			<div class="col">
+		  		<label><input type="radio" name="translateRadio" id="translateRadio" value="translate"> Translate</label>
+			</div>
+			<div class="col">
+				<div class="row">
+					<div class="col">
+						<label for="offsetX">OffsetX</label>
+	  					<input type="number" id="offsetX" placeholder="0" min="0" disabled="true">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<label for="offsetX">OffsetY</label>
+						<input type="number" id="offsetY" placeholder="0" min="0" disabled="true">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col">
+		  		<label><input type="radio" name="scaleRadio" id="scaleRadio" value="scale"> Scale %</label>
+			</div>
+			<div class="col">
+				<input type="number" id="scale" placeholder="100" min="0" disabled="true">
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col">
+		  		<label><input type="radio" name="rotateRadio" id="rotateRadio" value="rotate"> Rotate (degrees)</label>
+			</div>
+			<div class="col">
+				<input type="number" id="rotate" placeholder="0" min="0" max="360" disabled="true">
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col">
+		  		<label><input type="radio" name="moveToRadio" id="moveToRadio" value="moveTo"> MoveTo</label>
+			</div>
+			<div class="col">
+				<select id="move" name="move" disabled>
+					<option>RightPlane</option>
+				  	<option>LeftPlane</option>
+					<option>FloorPlane</option>
+				</select>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col">
+	  			<button type="submit" class="btn btn-default">Transform</button>
+			</div>
+		</div>
+	</form>
+
+  </body>
+</html>

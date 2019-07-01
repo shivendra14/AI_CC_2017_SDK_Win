@@ -1,0 +1,5 @@
+VSWIZARD 8.0
+Wizard=VsWizard.VsWizardEngine.11.0
+Param="WIZARD_NAME = IllustratorSDKProject"
+Param="RELATIVE_PATH = VCWizards\AppWiz\IllustratorSDK"
+Param="WIZARD_UI = FALSE"
